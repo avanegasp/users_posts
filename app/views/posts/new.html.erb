@@ -1,0 +1,8 @@
+<h1>Acá va el new posts</h1>
+
+ <%= form_for @post, url:"/posts", method: "post" do |f| %>
+   <%= f.text_field :title, placeholder: "title"%>
+   <%= f.text_field :description, placeholder: "descripción"%>
+   <%= f.number_field :user_id, placeholder: "usuario"%>
+   <%= f.submit %>
+ <%end%>

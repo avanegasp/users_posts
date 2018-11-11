@@ -1,0 +1,9 @@
+<h1>Estos son mis usuarios: </h1>
+
+<ul>
+  <%@users.each do |user| %>
+    <li>Mi nombre de usuario es: <%= link_to user.name, user %> y mi correo es:
+    <%= link_to user.email, user %></li>
+    <!-- <li><%= user.name %> y mi correo es: <%= user.email%></li> -->
+  <%end%>
+</ul>

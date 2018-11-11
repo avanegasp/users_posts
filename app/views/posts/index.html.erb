@@ -1,0 +1,7 @@
+<h1>Estos son mis posts</h1>
+
+<ul>
+  <%@posts.each do |post|%>
+    <li>Este es el título de mi post <%=post.title%> y esta es la descripción <%=post.description%></li>
+  <% end %>
+</ul>

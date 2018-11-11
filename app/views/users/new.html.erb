@@ -1,0 +1,7 @@
+<h1>Crea un usuario</h1>
+
+<%=form_for @user, url: "/users", method: "post" do |f|%>
+  <%= f.text_field :name, placeholder: "Nombre"%>
+  <%= f.text_field :email, placeholder: "Correo"%>
+  <%= f.submit%>
+<%end%>

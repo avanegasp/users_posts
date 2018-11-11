@@ -1,0 +1,13 @@
+<h1>Acá esta mi autor y mi libro</h1>
+
+<ul>
+  <%@user.posts.each do |post|%>
+    <li><%= post.title%></li>
+    <li><%= post.description%></li>
+    <li><%= post.user_id%></li>
+  <%end%>
+</ul>
+
+<%= form_tag @user, method: "delete" do%>
+  <%= submit_tag "Eliminar Usuario"%>
+<% end %>
